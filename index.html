@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="css_style.css">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+        <title>Shubh_Web</title>
+    </head>
+
+  <!-- FOR IMAGES  => https://source.unsplash.com/1400x300/?snaks -->
+
+
+    <body id="bg">
+
+<!-- Nevigation Bar -->
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+            <a class="navbar-brand" href="/bistro/tuto.html" id="icon"><b>Indian Bistro</b></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                    <a class="nav-link" href="/bistro/tuto.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/bistro/about.html">About</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Area
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Maharashtra</a>
+                            <a class="dropdown-item" href="#">Gujrat</a>
+                            <a class="dropdown-item" href="#">Delhi Region</a>
+                            <a class="dropdown-item" href="#">write for us</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/bistro/contact.html">Contact Us</a>
+                    </li>         
+                </ul>
+                
+                <span style="float:right" class="hov dto">
+                    <a href="#about">Phone No. 8983222814 </a>
+                </span>    
+                
+                
+                <br>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+
+                <div class="mx-2">
+                    <button class="btn btn-success" data-toggle="modal" data-target="#loginModal">Login</button>
+                    <button class="btn btn-success" data-toggle="modal" data-target="#signupModal">SignUp</button>
+                </div>
+            </div>
+        </nav>
+
+
+<!--Login Modal -->
+
+        <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Login To Account</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                            </div>
+
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Login</button>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-- End Login Modal >
+
+<!-- SignUp Modal -->
+
+        <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">SignUp </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Conform Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Create Account</button>
+                        </form>
+                    </div>
+
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-- End SignUp Modal -->
+
+<!-- Home Delivery -->
+
+ <div class="modal fade" id="deliveryModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Address </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Full Name</label>
+                                <input type="text" class="form-control" placeholder="Full Name">
+                                <small  class="form-text text-muted">We'll never share your information with anyone else.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Phone Number</label>
+                                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="99-99-999-999">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Delivery Address</label>
+                                <input type="address" class="form-control" id="exampleInputPassword1" placeholder="Address" rows="3">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Zip Code</label>
+                                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="xxx xxx">
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Conform Order</button>
+                        </form>
+                    </div>
+
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-- End Home Delivery -->
+
+
+<!-- Crousel  -->
+
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+
+                <div class="carousel-item active" id="crs">
+                    <img src="img_food_9.jpg" class="d-block w-100" alt="First slide">
+                    <div class="carousel-caption d-sd-block d-md-block">
+                        <h2 id="h2"><b>Welcome To Shubh Resturent</b></h2>
+                        <p><h4 id="p1"><b>The Test Of India</b></h4> </p>
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#deliveryModal"> Home Delivery</button>
+                        
+                        <a href="/bistro/about.html"><button class="btn btn-danger"> Online Order</button></a>
+                        
+                    </div>
+                </div>
+
+                <div class="carousel-item" id="crs">
+                    <img src="img_food_12.jpg" class="d-block w-100" alt="Second slide">
+                    <div class="carousel-caption d-sd-block d-md-block">
+                        <h2 id="h2"><b>The Best Resturent </b></h2>
+                        <p><h4 id="p1"><b>The Test Of India</b></h4></p>
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#deliveryModal"> Home Delivery</button>                  
+                        <a href="/bistro/about.html"><button class="btn btn-danger"> Online Order</button></a>
+                        
+                    </div>
+                </div>
+
+                <div class="carousel-item" id="crs">
+                    <img src="img_food_11.jpg" class="d-block w-100" alt="Third slide">
+                    <div class="carousel-caption d-sd-block  d-md-block">
+                       <h2 id="h2"><b> Explore It </b></h2>
+                       <p><h4 id="p1"><b>The Test Of India</b></h4></p>
+                       <button class="btn btn-primary" data-toggle="modal" data-target="#deliveryModal"> Home Delivery</button>
+                       <a href="/bistro/about.html"><button class="btn btn-danger"> Online Order</button></a>
+                        
+                    </div>
+                </div>
+            
+            </div>
+            
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+<!-- CARDS  -->
+
+        <div class="container my-4">
+
+            <div class="row mb-2">
+
+                  <!-- CARD - 1 -->
+                <div class="col-md-6 col-sm-12">
+                    <div class="card flex-md-row mb-4 box-shadow h-md-250 crd_bg" >
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <strong class="d-inline-block mb-2 text-primary"><b>Snaks</b></strong>
+                            <h3 class="mb-0">
+                                <a class="text-dark" href="#">Samosa</a>
+                            </h3>
+                            <div class="mb-1 text-muted">Available
+                            </div>
+                            <p class="card-text mb-auto">This is our best yummy dishes.</p>
+                            <a href="#"><h5 style="color:black">Price: 20 Rs</h5></a>
+                        </div>
+                        <div id="im" class="align-items-center card-body d-flex flex-column">
+                            <img src="img_food_2.jpg">
+                        </div>
+                    </div>
+                </div>
+              
+
+                  <!-- CARD - 2 -->
+                
+                <div class="col-md-6 col-sm-12">
+                    <div class="card flex-md-row mb-4 box-shadow h-md-250 crd_bg">
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <strong class="d-inline-block mb-2 text-success">Snaks</strong>
+                            <h3 class="mb-0">
+                                <a class="text-dark" href="#">Panipuri</a>
+                            </h3>
+                            <div class="mb-1 text-muted">Available
+                            </div>
+                            <p class="card-text mb-auto">This is our best yummy dishes.</p>
+                            <a href="#"><h5 style="color:black">Price: 30 Rs</h5></a>
+                        </div>
+                        <div id="im" class="align-items-center card-body d-flex flex-column">
+                            <img src="img_food_1.jpg">
+                        </div>
+                    </div>
+                </div>
+          
+
+                  <!-- CARD - 3 -->
+
+                <div class="col-md-6">
+                    <div class="card flex-md-row mb-4 box-shadow h-md-250 crd_bg">
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <strong class="d-inline-block mb-2 text-primary">Snaks</strong>
+                            <h3 class="mb-0">
+                                <a class="text-dark" href="#">Poha</a>
+                            </h3>
+                            <div class="mb-1 text-muted">Available
+                            </div>
+                            <p class="card-text mb-auto">This is our best yummy dishes.</p>
+                            <a href="#"><h5 style="color:black">Price: 25 Rs</h5></a>
+                        </div>
+                        <div id="im" class="align-items-center card-body d-flex flex-column">   
+                            <img src="img_food_3.jpg">
+                        </div>
+                    </div>
+                </div>
+                   
+                  <!-- CARD - 4 -->
+
+                <div class="col-md-6">
+                    <div class="card flex-md-row mb-4 box-shadow h-md-250 crd_bg">
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <strong class="d-inline-block mb-2 text-success">Snaks</strong>
+                            <h3 class="mb-0">
+                                <a class="text-dark" href="#">Dhokla</a>
+                            </h3>
+                            <div class="mb-1 text-muted">Available
+                            </div>
+                            <p class="card-text mb-auto">This is our best yummy dishes.</p>
+                            <a href="#"><h5 style="color:black">Price: 30 Rs</h5></a>
+                        </div>
+                        <div id="im" class="align-items-center card-body d-flex flex-column">
+                            <img src="img_food_5.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-- Footer  -->
+
+        <footer class="container">
+            <p class="float-right"><a href="#">Back to top</a></p>
+            <p style="color: white">© 2020-2021 Indian Bistro · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+        </footer>
+
+          <!-- Optional JavaScript -->
+          <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+</html>
