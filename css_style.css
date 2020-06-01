@@ -1,0 +1,64 @@
+
+#bg {
+	background: url("img_bg_1.jpg");
+}
+#h2 {
+	color: white;
+}
+#h3 {
+	color: white;
+}
+#p1 b{
+	color: yellow;
+	font-style: italic;
+}
+#tx_cl {
+	color: white;
+}
+#crs img {
+	width: auto;
+	height: 300px;
+}
+li a:hover {
+  background-color: #111;
+}
+.hov a:hover {
+  color: white;
+  background-color: #111;
+  padding: 8px;
+
+}
+.dto a {
+  padding-right: 8px;
+  color: darkgray;
+}
+#about img {
+	box-shadow: 0 4px 8px 0 black;
+	width: 390px; 
+	height: 200px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+div.crd_bg {
+	background-color: white;
+    box-shadow: 0 4px 8px 0 black;
+}
+
+#txt h2, p {
+	text-shadow: 0 4px 8px 0 black;
+	text-align: center;
+}
+#icon {
+	color: black;
+	text-shadow: 1px 2px blue;
+}
+
+#im img {
+	width: 240px;
+	height: 250px;
+	margin: 1px;
+	box-shadow: 0 4px 8px 0 black;
+
+}
+
+
