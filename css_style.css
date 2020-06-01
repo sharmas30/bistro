@@ -41,7 +41,8 @@ li a:hover {
 }
 div.crd_bg {
 	background-color: white;
-    box-shadow: 0 4px 8px 0 black;
+	opacity: 0.7;
+        box-shadow: 0 4px 8px 0 black;
 }
 
 #txt h2, p {
